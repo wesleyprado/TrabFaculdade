@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  trabalhouna-mysql:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=trabalhouna
+      - MYSQL_USER=trabalhouna-user
+      - MYSQL_PASSWORD=password
+    ports:
+      - 3306:3306
